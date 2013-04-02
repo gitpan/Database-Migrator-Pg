@@ -1,6 +1,6 @@
 package Database::Migrator::Pg;
 {
-  $Database::Migrator::Pg::VERSION = '0.01';
+  $Database::Migrator::Pg::VERSION = '0.02';
 }
 
 use strict;
@@ -182,7 +182,7 @@ Database::Migrator::Pg - Database::Migrator implementation for Postgres
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -201,6 +201,25 @@ version 0.01
 
 This module provides a L<Database::Migrator> implementation for Postgres. See
 L<Database::Migrator> and L<Database::Migrator::Core> for more documentation.
+
+=head1 ATTRIBUTES
+
+This class adds several attributes in addition to those implemented by
+L<Database::Migrator::Core>:
+
+=over 4
+
+=item * encoding
+
+The encoding of the database. This is only used when creating a new
+database. This is optional.
+
+=item * owner
+
+The owner of the database. This is only used when creating a new
+database. This is optional.
+
+=back
 
 =head1 AUTHOR
 
