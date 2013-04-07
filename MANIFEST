@@ -10,6 +10,7 @@ dist.ini
 lib/Database/Migrator/Pg.pm
 t/author-live-test.t
 t/author-pod-spell.t
+t/compile.t
 t/release-cpan-changes.t
 t/release-eol.t
 t/release-no-tabs.t

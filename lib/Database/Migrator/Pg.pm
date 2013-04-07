@@ -1,6 +1,6 @@
 package Database::Migrator::Pg;
 {
-  $Database::Migrator::Pg::VERSION = '0.02';
+  $Database::Migrator::Pg::VERSION = '0.03';
 }
 
 use strict;
@@ -182,7 +182,7 @@ Database::Migrator::Pg - Database::Migrator implementation for Postgres
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
