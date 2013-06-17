@@ -1,13 +1,16 @@
 package Database::Migrator::Pg;
 {
-  $Database::Migrator::Pg::VERSION = '0.03';
+  $Database::Migrator::Pg::VERSION = '0.04';
+}
+BEGIN {
+  $Database::Migrator::Pg::AUTHORITY = 'cpan:DROLSKY';
 }
 
 use strict;
 use warnings;
 use namespace::autoclean;
 
-use Database::Migrator 0.05;
+use Database::Migrator 0.07;
 use Database::Migrator::Types qw( HashRef Str );
 use File::Slurp qw( read_file );
 use Pg::CLI 0.11;
@@ -166,6 +169,8 @@ around _build_dbh => sub {
     return $dbh;
 };
 
+sub _driver_name { 'Pg' }
+
 __PACKAGE__->meta()->make_immutable();
 
 1;
@@ -182,7 +187,7 @@ Database::Migrator::Pg - Database::Migrator implementation for Postgres
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -227,7 +232,7 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2013 by MaxMind, LLC.
+This software is Copyright (c) 2013 by MaxMind, Inc..
 
 This is free software, licensed under:
 

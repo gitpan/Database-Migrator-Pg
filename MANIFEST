@@ -8,12 +8,14 @@ Makefile.PL
 README
 dist.ini
 lib/Database/Migrator/Pg.pm
+t/00-compile.t
 t/author-live-test.t
 t/author-pod-spell.t
 t/compile.t
 t/release-cpan-changes.t
 t/release-eol.t
 t/release-no-tabs.t
+t/release-pod-coverage.t
 t/release-pod-linkcheck.t
 t/release-pod-no404s.t
 t/release-pod-syntax.t

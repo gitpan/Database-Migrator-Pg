@@ -20,7 +20,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "artistic_2",
   "NAME" => "Database::Migrator::Pg",
   "PREREQ_PM" => {
-    "Database::Migrator" => "0.05",
+    "Database::Migrator" => "0.07",
     "Database::Migrator::Core" => 0,
     "Database::Migrator::Types" => 0,
     "File::Slurp" => 0,
@@ -34,9 +34,11 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
+    "File::Find" => 0,
+    "File::Temp" => 0,
     "Test::More" => "0.88"
   },
-  "VERSION" => "0.03",
+  "VERSION" => "0.04",
   "test" => {
     "TESTS" => "t/*.t"
   }
